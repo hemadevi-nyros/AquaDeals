@@ -5,23 +5,21 @@ import styles from './styles';
 
 const BrandButton = ({BrandButtonData}) => (
  <View>
- <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-   {
-      BrandButtonData && BrandButtonData.length > 0 ?
-      BrandButtonData.map((data, index) => {
-      return(
-        <View style={styles.element}>
-         <Image resizeMode="contain"  source={{uri:"https://aqua.deals/admin/assets/images/"+data.img}} style={styles.image} />
-       </View>
-      )
-      }) : null
+  <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+    {
+     BrandButtonData && BrandButtonData.length > 0 ?
+     BrandButtonData.map((data, index) => {
+     return(
+      <View style={styles.element}>
+       <Image resizeMode="contain"  source={{uri:"https://aqua.deals/admin/assets/images/"+data.img}} style={styles.image} />
+      </View>
+     )
+     }) : null
     }
- </ScrollView>
+  </ScrollView>
  </View>
 );
-
 BrandButton.propTypes = {
  BrandButtonData: PropTypes.object,
 };
-
 export default BrandButton;
