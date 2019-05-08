@@ -1,0 +1,32 @@
+{"stores": [
+{
+  "id": 1,
+  "image": "images/imported.png",
+  "name" : "IMPORTED"
+},
+{
+  "id": 2,
+  "image": "images/organic.png",
+  "name" : "ORGANIC"
+},
+{
+  "id": 3,
+  "image": "images/CAA.png",
+  "name": "CAA APPROVED"
+},
+{
+	"id": 4,
+	"image": "images/ad.png",
+	"name" : "AD GUARANTEE"
+},
+{
+	"id": 5,
+	"image": "images/truck.png",
+	"name":  "FREE SHIPMENT",
+}
+
+]};
+
+
+
+

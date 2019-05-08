@@ -1,0 +1,35 @@
+{"resources": [
+{
+  "id": 1,
+  "image": "images/8.jpg",
+  "name" : "Liver Tone",
+  "description": "Organic",
+  "price": "1170"
+},
+{
+  "id": 2,
+  "image": "images/seven.jpg",
+  "name" : "Gasocare",
+  "description": "Organic", 
+  "price": "890"
+},
+{
+  "id": 3,
+  "image": "images/two.png",
+  "name" : "Cleanspot",
+  "description": "Organic",
+  "price": "1590"
+
+},
+{
+  "id": 4,
+  "image": "images/one.png",
+  "name": "Preeve",
+  "description": "Organic",
+  "price": "4120"
+},
+]};
+
+
+
+

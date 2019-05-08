@@ -1,0 +1,17 @@
+{"brands": [
+{
+  "id": 1,
+  "image": "images/brand1.png"
+},
+{
+  "id": 2,
+  "image": "images/brand2.png"
+},
+{
+  "id": 3,
+  "image": "images/brand2.png"
+}
+
+]};
+
+

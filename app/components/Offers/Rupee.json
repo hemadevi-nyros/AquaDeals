@@ -1,0 +1,27 @@
+{"images": [
+{
+  "id": 1,
+  "image": "images/rupee.png",
+  "road" :"images/road.png",
+},
+{
+  "id": 2,
+  "image": "images/mob.png",
+  "road" :"images/road.png",
+},
+{
+  "id": 3,
+  "image": "images/hand.png",
+  "road" :"images/road.png",
+
+},
+{
+  "id": 4,
+  "image": "images/pocket.png",
+  "road" :"images/road.png",
+},
+]};
+
+
+
+

@@ -1,0 +1,21 @@
+{"infos": [
+{
+  "id": 1,
+  "image": "https://www.aquadeals.in/admin/assets//icons/tuna.png",
+  "name" : "Feed"
+},
+{
+  "id": 2,
+  "image": "https://www.aquadeals.in/admin/assets//icons/health.png",
+  "name" : "Health Care"
+},
+{
+  "id": 3,
+  "image": "https://www.aquadeals.in/admin/assets//icons/aerator.png",
+  "name": "Machine & Equipment"
+}
+]};
+
+
+
+
