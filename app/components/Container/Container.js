@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { View } from 'react-native';
-
 import styles from './styles';
 
 const Container = ({ children }) => (
@@ -9,9 +8,7 @@ const Container = ({ children }) => (
     {children}
   </View>
 );
-
 Container.propTypes = {
   children: PropTypes.string,
 };
-
 export default Container;
