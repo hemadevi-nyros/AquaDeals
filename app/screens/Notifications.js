@@ -9,18 +9,18 @@ class Notifications extends Component{
 render() {
 return(
  <View>
-	 <ImageBackground resizeMode="contain" source={{uri:'https://www.aquadeals.in/admin/assets//images/web_imgs/login_bg.png'}} style={styles.backgroundimage}>
-	   <TouchableOpacity onPress={() => {
-       this.props.navigation.navigate('Home');}}>
-	  	 <Image
-        resizeMode="contain"
-        source={require('./images/home.png')}
-        style = {styles.home}
-       />
-     </TouchableOpacity>
-    </ImageBackground>
-    <Text style={styles.text}>SIGN IN OR REGISTER</Text>
-    <Form />
+  <ImageBackground resizeMode="contain" source={{uri:'https://www.aquadeals.in/admin/assets//images/web_imgs/login_bg.png'}} style={styles.backgroundimage}>
+	 <TouchableOpacity onPress={() => {
+    this.props.navigation.navigate('Home');}}>
+	   <Image
+      resizeMode="contain"
+      source={require('./images/home.png')}
+      style = {styles.home}
+     />
+   </TouchableOpacity>
+  </ImageBackground>
+  <Text style={styles.text}>SIGN IN OR REGISTER</Text>
+  <Form />
  </View> 
 );
 };
