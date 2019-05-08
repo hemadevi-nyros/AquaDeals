@@ -41,7 +41,6 @@ class Home extends Component {
    this.setState({homebrandStore: nextProps.brandstore}) 
    this.setState({homePromos: nextProps.offers})
   }
-  
   handlePress= (id) =>{
     if(this.state.status == true)
     {
@@ -123,12 +122,11 @@ const styles = StyleSheet.create({
    width: 370,
    height: 200,
    backgroundColor:"#FFFFFF",
- },
-
+  },
   text:{
-    fontSize: 12,
-    marginTop: 10,
-    marginLeft: 10,
+   fontSize: 12,
+   marginTop: 10,
+   marginLeft: 10,
   },
   brandbox: {
    marginTop: 10,
@@ -137,11 +135,11 @@ const styles = StyleSheet.create({
    backgroundColor:"#FFFFFF",
   },
   store: {
-    flexDirection: "row",
+   flexDirection: "row",
   },
   image:{
-    height: 200,
-    width: 400,
+   height: 200,
+   width: 400,
   },
   promobox:{
    marginTop: 10,
@@ -150,31 +148,30 @@ const styles = StyleSheet.create({
    backgroundColor:"#FFFFFF",
   },
   promo:{
-    flexDirection: 'row',
+   flexDirection: 'row',
   },
   view: {
-    marginTop: 10,
-    marginLeft:200,
-    color: "#FF7F50",
+   marginTop: 10,
+   marginLeft:200,
+   color: "#FF7F50",
   },
   organic:{
-    position: "absolute",
+   position: "absolute",
   },
   truck:{
-    marginTop: 55,
-    marginLeft: 80,
-    position: 'absolute',
-    alignItems: 'center',
-    justifyContent: 'center',
+   marginTop: 55,
+   marginLeft: 80,
+   position: 'absolute',
+   alignItems: 'center',
+   justifyContent: 'center',
   },
   truckimage:{
-    height: 150,
-    width: 150,
+   height: 150,
+   width: 150,
   },
   promotions:{
-    position: 'absolute',
+   position: 'absolute',
   },
-
 });
 
 const mapStateToProps = (state) => {
