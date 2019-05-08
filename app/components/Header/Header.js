@@ -6,7 +6,6 @@ import Cart from './Cart';
 import Menu from './Menu';
 import styles from './styles';
 
-
 class Header extends Component{
    constructor(props) {
    super(props);
@@ -15,36 +14,34 @@ class Header extends Component{
     };
    };
  render() {
- 	return(
-    <View style={styles.view}>
-      <View style={styles.menu}>
-        <Menu />
-      </View>
- 	   <View style={styles.header}>
- 	       <TextInput
-            placeholder="Search for brands and products"
-            {...this.props}
-            editable = {true}
-            style={styles.input}
-          />
- 	   </View>
-     <View>
-       <Image
-         resizeMode="contain"
-         source={require('./images/search.png')}
-         style ={styles.icon}
-        /> 
-      </View>
-      <View>
-        <Notification />
-      </View>
-      <View>
-        <Cart />
-      </View>
-        
-    </View>
- 	);
- };
+ return(
+ <View style={styles.view}>
+  <View style={styles.menu}>
+   <Menu />
+  </View>
+ 	<View style={styles.header}>
+ 	  <TextInput
+     placeholder="Search for brands and products"
+     {...this.props}
+     editable = {true}
+     style={styles.input}
+    />
+ 	</View>
+  <View>
+    <Image
+     resizeMode="contain"
+     source={require('./images/search.png')}
+     style ={styles.icon}
+    /> 
+  </View>
+  <View>
+    <Notification />
+  </View>
+  <View>
+    <Cart />
+  </View>      
+</View>
+);
 };
-
+};
 export default Header;
