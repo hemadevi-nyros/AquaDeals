@@ -68,45 +68,42 @@ class Signin extends Component{
   handlePress = () => {
    this.props.navigation.navigate('Home');
   }
-	render() {
-    const details = this.state.loginUser;
-	   return(
-      <View>
-        <Text>Enter your mobile number </Text>
-        <View style={styles.form_elements}>
-         <Image resizeMode="contain" source={require('./images/india.png')} style={styles.icon} />
-         <Text style={styles.text}>+91</Text>
-         <TextInput 
-          placeholder="Enter your mobile number" 
-          keyboardType="numeric"
-          style={styles.inputtext} 
-          onChangeText={(text)=>this.validate(text,'mobile')}/>
-        </View>
-        { !this.state.numberValidate ? (
-          <Text style={styles.errorMessage}>Please Enter valid mobile number</Text>
-          ) : null  }
-        <TextInput 
-          placeholder="Password" 
-          secureTextEntry={true}
-          style={styles.inputpassword} 
-          onChangeText={(text)=>this.validate(text,'password')}/>
-          { !this.state.passwordValidate ? (
-          <Text style={styles.errorMessage}>Please Enter password in numbers</Text>
-          ) : null  }
-       <Button
-          title="Submit"
-          type="outline"
-          containerStyle={{marginTop:10, marginBottom: 10}}
-          onPress={this.handlePress}
-        />
-        <Button title="Change name" onPress={this.changeName} />
-        <Text>{this.state.name}</Text>
-      </View>
-      
-	  );
-    
-   
-	};
+ render() {
+ const details = this.state.loginUser;
+ return(
+  <View>
+    <Text>Enter your mobile number </Text>
+    <View style={styles.form_elements}>
+     <Image resizeMode="contain" source={require('./images/india.png')} style={styles.icon} />
+     <Text style={styles.text}>+91</Text>
+     <TextInput 
+      placeholder="Enter your mobile number" 
+      keyboardType="numeric"
+      style={styles.inputtext} 
+      onChangeText={(text)=>this.validate(text,'mobile')}/>
+   </View>
+   { !this.state.numberValidate ? (
+    <Text style={styles.errorMessage}>Please Enter valid mobile number</Text>
+   ) : null  }
+   <TextInput 
+    placeholder="Password" 
+    secureTextEntry={true}
+    style={styles.inputpassword} 
+    onChangeText={(text)=>this.validate(text,'password')}/>
+   { !this.state.passwordValidate ? (
+   <Text style={styles.errorMessage}>Please Enter password in numbers</Text>
+   ) : null  }
+   <Button
+    title="Submit"
+    type="outline"
+    containerStyle={{marginTop:10, marginBottom: 10}}
+    onPress={this.handlePress}
+   />
+   <Button title="Change name" onPress={this.changeName} />
+   <Text>{this.state.name}</Text>
+  </View> 
+ );   
+};
 };
 
 const styles = StyleSheet.create({
@@ -135,8 +132,7 @@ const styles = StyleSheet.create({
    fontSize: 15,
    color:"red",
    marginLeft: 60
-  },
-  
+  }, 
 });
 
 const mapStateToProps = (state) => {
