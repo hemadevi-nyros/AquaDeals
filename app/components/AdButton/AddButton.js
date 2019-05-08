@@ -7,28 +7,26 @@ import {connect} from 'react-redux';
 
 const AddButton = ({AddButtonData, onPress}) => (
  <View>
- <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-   {
-      AddButtonData && AddButtonData.length > 0 ?
-      AddButtonData.map((data, index) => {
-      return(
-        <View style={{alignItems: 'center', marginLeft:15, marginRight: 15, marginTop:5}}>
+   <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+     {
+       AddButtonData && AddButtonData.length > 0 ?
+       AddButtonData.map((data, index) => {
+       return(
+       <View style={{alignItems: 'center', marginLeft:15, marginRight: 15, marginTop:5}}>
          <TouchableOpacity onPress={onPress}>
-          <Image resizeMode="contain"  source={{uri:"https://aqua.deals/admin/assets/images/"+data.img}} style={styles.image} />
+           <Image resizeMode="contain"  source={{uri:"https://aqua.deals/admin/assets/images/"+data.img}} style={styles.image} />
          </TouchableOpacity>
-          <Text style={{fontSize: 10, paddingTop: 5, color: "#686868"}}>{data.type}</Text>
+         <Text style={{fontSize: 10, paddingTop: 5, color: "#686868"}}>{data.type}</Text>
        </View>
       )
       }) : null
     }
- </ScrollView>
+   </ScrollView>
  </View>
 );
-
 AddButton.propTypes = {
  AddButtonData: PropTypes.object,
  onPress: PropTypes.func
 };
-
 export default AddButton;
 
