@@ -5,24 +5,24 @@ import {Rating, PricingCard, Input} from 'react-native-elements';
 import Form from './Form';
 
 class Cart extends Component{
-	render() {
-	return(
-   <View>
-	   <ImageBackground resizeMode="contain" source={{uri:'https://www.aquadeals.in/admin/assets//images/web_imgs/login_bg.png'}} style={styles.backgroundimage}>
-      <TouchableOpacity onPress={() => {
-        this.props.navigation.navigate('Home');}}>
-        <Image
-          resizeMode="contain"
-          source={require('./images/home.png')}
-          style = {styles.home}
-         />
-       </TouchableOpacity>
-      </ImageBackground>
-      <Text style={styles.text}>SIGN IN OR REGISTER</Text>
-      <Form />
-    </View>
-	 );
-	};
+render() {
+return(
+ <View>
+   <ImageBackground resizeMode="contain" source={{uri:'https://www.aquadeals.in/admin/assets//images/web_imgs/login_bg.png'}} style={styles.backgroundimage}>
+    <TouchableOpacity onPress={() => {
+      this.props.navigation.navigate('Home');}}>
+      <Image
+        resizeMode="contain"
+        source={require('./images/home.png')}
+        style = {styles.home}
+      />
+    </TouchableOpacity>
+   </ImageBackground>
+   <Text style={styles.text}>SIGN IN OR REGISTER</Text>
+   <Form />
+  </View>
+);
+};
 };
 const styles = StyleSheet.create({
  background:{
