@@ -4,7 +4,6 @@ import {View, Text, TextInput, SearchBar, TouchableOpacity, Image } from 'react-
 import { withNavigation } from 'react-navigation';
 import styles from './styles';
 
-
 class Notification extends Component{
  static propTypes = {
    navigation: PropTypes.object,
@@ -12,18 +11,17 @@ class Notification extends Component{
  handleBellPress = () =>{
    this.props.navigation.navigate('Notifications');
  };
- render() {
- 	return(
- 		<TouchableOpacity 
-         onPress={this.handleBellPress}>
-          <Image
-           resizeMode="contain"
-           source={require('./images/bell.png')}
-           style ={styles.bell}
-         />
-       </TouchableOpacity>
- 	);
- }
+render() {
+return(
+ <TouchableOpacity 
+  onPress={this.handleBellPress}>
+  <Image
+   resizeMode="contain"
+   source={require('./images/bell.png')}
+   style ={styles.bell}
+  />
+ </TouchableOpacity>
+);
+}
 };
-
 export default withNavigation(Notification);
