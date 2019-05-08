@@ -19,14 +19,14 @@ class Header extends Component{
   <View style={styles.menu}>
    <Menu />
   </View>
- 	<View style={styles.header}>
- 	  <TextInput
-     placeholder="Search for brands and products"
-     {...this.props}
-     editable = {true}
-     style={styles.input}
-    />
- 	</View>
+  <View style={styles.header}>
+   <TextInput
+   placeholder="Search for brands and products"
+   {...this.props}
+   editable = {true}
+   style={styles.input}
+   />
+ </View>
   <View>
     <Image
      resizeMode="contain"
