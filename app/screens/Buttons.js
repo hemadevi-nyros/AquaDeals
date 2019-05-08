@@ -15,31 +15,31 @@ class Buttons extends Component{
   updateIndex(selectedIndex){
     this.setState({selectedIndex})
   }
-	render() {
-    const buttons = ['Hello', 'World', 'Buttons']
-    const {selectedIndex} = this.state
-	  return(
-	  	<View>
-        <Button
-          title="Outline button"
-          type="outline"
-          containerStyle={{marginTop:10, marginBottom: 10}}
-        />
-        <Button
-         title="Login"
-         type="clear"
-         containerStyle={{marginTop:10, marginBottom: 10}}
-         onPress={() => {
-           this.props.navigation.navigate('Login');}}
-       />
-       <Button
-         icon={
-           <Icon
-             name="arrow-right"
-             size={15}
-             color="white"
-            />
-          }
+  render() {
+  const buttons = ['Hello', 'World', 'Buttons']
+  const {selectedIndex} = this.state
+  return(
+   <View>
+     <Button
+       title="Outline button"
+       type="outline"
+       containerStyle={{marginTop:10, marginBottom: 10}}
+     />
+     <Button
+       title="Login"
+       type="clear"
+       containerStyle={{marginTop:10, marginBottom: 10}}
+       onPress={() => {
+       this.props.navigation.navigate('Login');}}
+      />
+      <Button
+        icon={
+        <Icon
+         name="arrow-right"
+         size={15}
+         color="white"
+         />
+         }
          title="Button with icon component"
          containerStyle={{marginTop:10, marginBottom: 10}}
        />
@@ -75,18 +75,14 @@ class Buttons extends Component{
          buttons={buttons}
          containerStyle={{height:50, marginTop:10, marginBottom:10}}
         />
-
         <Tooltip popover = {<Text>Info here </Text>}
          containerStyle={{marginTop:40, marginLeft: 50}}
          height={50}
         >
-          <Text style={{marginLeft:50}}>Press me </Text>
+         <Text style={{marginLeft:50}}>Press me </Text>
         </Tooltip>
-
       </View>
 	  );
-
 	};
 };
-
 export default withNavigation(Buttons);
