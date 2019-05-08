@@ -4,7 +4,6 @@ import {View, Text, TextInput, SearchBar, TouchableOpacity, Image } from 'react-
 import { withNavigation } from 'react-navigation';
 import styles from './styles';
 
-
 class Cart extends Component{
  static propTypes = {
    navigation: PropTypes.object,
@@ -13,17 +12,15 @@ class Cart extends Component{
    this.props.navigation.navigate('Cart');
  };
  render() {
- 	return(
- 		<TouchableOpacity 
-         onPress={this.handleBellPress}>
-          <Image
-           resizeMode="contain"
-           source={require('./images/cart.png')}
-           style ={styles.cart}
-         />
-       </TouchableOpacity>
- 	);
+ return(
+ <TouchableOpacity onPress={this.handleBellPress}>
+   <Image
+    resizeMode="contain"
+    source={require('./images/cart.png')}
+    style ={styles.cart}
+   />
+ </TouchableOpacity>
+ );
  }
 };
-
 export default withNavigation(Cart);
