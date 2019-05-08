@@ -10,37 +10,37 @@ export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 
 export const getdealOffers = () =>  ({
-    type: 'GET_DEALOFFERS',
+ type: 'GET_DEALOFFERS',
 });
 export const receivedealOffers = data =>  ({
-    type: 'RECEIVE_DEALOFFERS',
-    data
+ type: 'RECEIVE_DEALOFFERS',
+ data
 });
 export const getbrandStore = () => ({
-	type: 'GET_BRANDSTORE',
+ type: 'GET_BRANDSTORE',
 });
 export const receivebrandStore = data => ({
-    type:'RECEIVE_BRANDSTORE',
-    data
+ type:'RECEIVE_BRANDSTORE',
+ data
 });
 export const getPromos= () => ({
-	type: 'GET_PROMOS',
+ type: 'GET_PROMOS',
 });
 export const receivePromos = data => ({
-    type:'RECEIVE_PROMOS',
-    data
+ type:'RECEIVE_PROMOS',
+ data
 });
 export const getUsers= () => ({
-	type: 'GET_USERS',
+ type: 'GET_USERS',
 });
 export const receiveUsers = data => ({
-    type:'RECEIVE_USERS',
-    data
+ type:'RECEIVE_USERS',
+ data
 });
 export const Increment = () => ({
-    type: 'INCREMENT'
+ type: 'INCREMENT'
 });
 export const Decrement = () => ({
-    type: 'DECREMENT'
+ type: 'DECREMENT'
 });
 
